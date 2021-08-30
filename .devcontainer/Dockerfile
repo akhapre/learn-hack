@@ -8,6 +8,4 @@ RUN apt-get update
 RUN apt-get install hhvm -y
 EXPOSE 80
 EXPOSE 8999
-WORKDIR /root/lean-hack
-
-
+WORKDIR /root/learn-hack
