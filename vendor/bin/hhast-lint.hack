@@ -1,0 +1,1 @@
+../hhvm/hhast/bin/hhast-lint.hack

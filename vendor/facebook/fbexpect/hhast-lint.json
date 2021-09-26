@@ -1,0 +1,4 @@
+{
+  "builtinLinters": "all",
+  "roots": [ "src/", "tests/" ]
+}

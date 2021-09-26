@@ -1,0 +1,1 @@
+../hhvm/hhvm-autoload/bin/hh-autoload.hack

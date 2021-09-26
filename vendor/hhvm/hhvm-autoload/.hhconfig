@@ -1,0 +1,16 @@
+assume_php=false
+enable_experimental_tc_features = no_fallback_in_namespaces, unpacking_check_arity, disallow_refs_in_array, disallow_untyped_lambda_as_non_function_type
+ignored_paths = [ "vendor/.+/tests/.+", "vendor/.+/bin/.+", "testdata/fixtures/.+\.tmp\..+\.hack", "testdata/fixtures/xhp-class/.+" ]
+safe_array = true
+safe_vector_array = true
+disallow_destruct = true
+disallow_stringish_magic = true
+disable_primitive_refinement = true
+user_attributes=
+disable_static_local_variables = true
+disallow_array_literal = true
+disallow_silence = true
+allowed_decl_fixme_codes=2053,4045
+allowed_fixme_codes_strict=2011,2049,2050,2053,4027,4045,4106,4107,4108,4110,4128,4135,4188,4240,4323,4390,4401
+disable_modes=true
+; enable_strict_string_concat_interp=true

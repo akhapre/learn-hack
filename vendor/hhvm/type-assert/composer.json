@@ -1,0 +1,21 @@
+{
+  "name": "hhvm/type-assert",
+  "description": "Convert untyped data to typed data",
+  "license": "MIT",
+  "keywords": ["hack", "TypeAssert"],
+  "require": {
+    "hhvm": "^4.115",
+    "hhvm/hsl": "^4.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "4.x-dev"
+    }
+  },
+  "require-dev": {
+    "hhvm/hhvm-autoload": "^2.0|^3.0",
+    "facebook/fbexpect": "^2.0.0",
+    "hhvm/hacktest": "^2.0",
+    "hhvm/hhast": "^4.0"
+  }
+}

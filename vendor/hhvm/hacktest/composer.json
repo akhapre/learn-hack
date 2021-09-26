@@ -1,0 +1,24 @@
+{
+  "name": "hhvm/hacktest",
+  "bin": ["bin/hacktest", "bin/hacktest.hack"],
+  "description": "The Hack Test Library",
+  "license": "MIT",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.x-dev",
+      "dev-CI_current_pull_request": "2.x-dev"
+    }
+  },
+  "require-dev": {
+    "facebook/fbexpect": "^2.3.0",
+    "hhvm/hhast": "^4.0"
+  },
+  "require": {
+    "hhvm": "^4.60",
+    "hhvm/hhvm-autoload": "^2.0.2|^3.0",
+    "hhvm/hsl-experimental": "^4.58.0rc1",
+    "hhvm/hsl-io": "^0.2.0|^0.3.0",
+    "facebook/hh-clilib": "^2.5.0rc1",
+    "hhvm/type-assert": "^3.0|^4.0"
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "browser-preview.startUrl": "http://localhost:8080",
+    "browser-preview.verbose": false,
+    "browser-preview.ignoreHttpsErrors": true
+}

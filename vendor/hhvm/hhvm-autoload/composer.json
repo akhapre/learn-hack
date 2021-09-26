@@ -1,0 +1,35 @@
+{
+  "name": "hhvm/hhvm-autoload",
+  "license": "MIT",
+  "replace": {
+    "facebook/hhvm-autoload": "1.*"
+  },
+  "type": "composer-plugin",
+  "bin": [
+    "bin/hh-autoload",
+    "bin/hh-autoload.hack"
+  ],
+  "require": {
+    "composer-plugin-api": "^1.0|^2.0",
+    "hhvm": "^4.109",
+    "hhvm/hsl": "^4.0"
+  },
+  "require-dev": {
+    "hhvm/hacktest": "^2.0",
+    "facebook/fbexpect": "^2.1"
+  },
+  "autoload": {
+    "classmap": [
+      "ComposerPlugin.php"
+    ]
+  },
+  "extra": {
+    "class": [
+      "Facebook\\AutoloadMap\\ComposerPlugin"
+    ],
+    "branch-alias": {
+      "dev-master": "3.x-dev",
+      "dev-CI_current_pull_request": "3.x-dev"
+    }
+  }
+}
