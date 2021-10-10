@@ -1,0 +1,42 @@
+{
+    "name": "facebook/hack-codegen",
+    "description": "Hack Codegen is a library for programmatically generating Hack code",
+    "keywords": ["code generation", "Hack"],
+    "require": {
+        "hhvm": "^4.80",
+        "hhvm/hhvm-autoload": "^2.0|^3.0",
+        "hhvm/hsl": "^4.0"
+    },
+    "bin": [ "bin/hh-codegen-verify-signatures", "bin/hh-codegen-verify-signatures.hack" ],
+    "authors": [
+        {
+            "name": "Fred Emmott",
+            "role": "Developer"
+        },
+        {
+            "name": "Drew Hoskins",
+            "role": "Developer"
+        },
+        {
+            "name": "Gaurav Kumar",
+            "role": "Developer"
+        },
+        {
+            "name": "Alejandro Marcu",
+            "role": "Developer"
+        },
+        {
+            "name": "Matthieu Martin",
+            "role": "Developer"
+        }
+    ],
+    "type": "library",
+    "require-dev": {
+        "hhvm/hsl-experimental": "^4.53",
+        "hhvm/hacktest": "^2.0",
+        "hhvm/type-assert": "^3.1|^4.0",
+        "facebook/fbexpect": "^2.6.1",
+        "hhvm/hhast": "^4.80",
+        "facebook/difflib": "^1.0"
+    }
+}

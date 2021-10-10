@@ -1,0 +1,11 @@
+vendor/
+*.swp
+www.pid
+.DS_Store
+composer.lock
+.*.hhast.*cache
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

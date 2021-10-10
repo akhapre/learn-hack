@@ -1,0 +1,13 @@
+{
+  "roots": [ "src/", "tests/" ],
+  "builtinLinters": "all",
+  "overrides": [
+    {
+      "patterns": [ "tests/data/*" ],
+      "builtinLinters": "none",
+      "extraLinters": [
+        "Facebook\\HHAST\\Linters\\LicenseHeaderLinter"
+      ]
+    }
+  ]
+}

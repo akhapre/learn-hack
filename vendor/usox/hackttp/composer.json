@@ -1,0 +1,37 @@
+{
+	"name": "usox/hackttp",
+	"type": "library",
+	"description": "Work in progress demo implementation of facebookexperimental/hack-http-request-response-interfaces",
+	"keywords": ["hack", "http", "message", "request", "response", "stream", "hacklang", "hhvm"],
+	"license": "MIT",
+	"homepage": "https://github.com/usox/hackttp",
+	"authors": [
+		{
+			"name": "Daniel Jakob",
+			"email": "dev@usox.org",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"hhvm": "^4.93",
+		"facebook/hack-http-request-response-interfaces": "^0.3",
+		"hhvm/hsl": "^4.25",
+		"hhvm/hsl-experimental": "^4.58",
+		"hhvm/hsl-io": "^0.3.0",
+		"hhvm/type-assert": "^3.3|^4.0",
+		"usox/hack-http-factory-interfaces": "^0.2"
+	},
+	"require-dev": {
+		"usox/hackmock": "^1.3",
+    "hhvm/hhast": "^4.1",
+    "hhvm/hacktest": "^1.4|^2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Usox\\HackTTP\\": "src/"
+		}
+	},
+	"scripts": {
+		"tests": "env hhvm vendor/bin/hacktest tests"
+	}
+}

@@ -1,0 +1,10 @@
+{
+  "roots": [
+    "src/"
+  ],
+  "devRoots": [
+    "examples/",
+    "tests/"
+  ],
+  "devFailureHandler": "Facebook\\AutoloadMap\\HHClientFallbackHandler"
+}

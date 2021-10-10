@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Usox\\HackTTP\\' => array($vendorDir . '/usox/hackttp/src'),
+    'Usox\\HackHttpFactory\\' => array($vendorDir . '/usox/hack-http-factory-interfaces/src'),
 );

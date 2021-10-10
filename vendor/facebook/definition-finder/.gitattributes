@@ -1,0 +1,4 @@
+tests/ export-ignore
+bin/ export-ignore
+.hhconfig export-ignore
+*.hack linguist-language=Hack

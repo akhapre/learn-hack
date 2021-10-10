@@ -1,0 +1,31 @@
+{
+  "roots": [ "src/", "examples/", "tests/" ],
+  "builtinLinters": "all",
+  "disabledLinters": [
+    "Facebook\\HHAST\\UseStatementWithAsLinter",
+    "Facebook\\HHAST\\Linters\\UseStatementWithAsLinter"
+  ],
+  "overrides": [
+    {
+      "patterns": [
+        "examples/dorm/demo/DormUser.php",
+        "examples/dorm/demo/DormUserMutator.php"
+      ],
+      "disableAllAutoFixes": true
+    },
+    {
+      "patterns": [ "examples/dorm/**" ],
+      "disabledLinters": [
+        "Facebook\\HHAST\\StrictModeOnlyLinter",
+        "Facebook\\HHAST\\Linters\\StrictModeOnlyLinter"
+      ]
+    },
+    {
+      "patterns": [ "src/PlainSprintf.php" ],
+      "disabledLinters": [
+        "Facebook\\HHAST\\CamelCasedMethodsUnderscoredFunctionsLinter",
+        "Facebook\\HHAST\\Linters\\CamelCasedMethodsUnderscoredFunctionsLinter"
+      ]
+    }
+  ]
+}

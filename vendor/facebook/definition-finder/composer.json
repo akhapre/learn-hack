@@ -1,0 +1,23 @@
+{
+  "name": "facebook/definition-finder",
+  "description": "Find definitions in PHP or Hack files. Useful for autoloaders.",
+  "keywords": ["hack", "definitions", "hhvm", "autoload"],
+  "homepage": "https://github.com/hhvm/definitions-finder",
+  "license": "MIT",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.x-dev"
+    }
+  },
+  "require": {
+    "hhvm": "^4.78",
+    "hhvm/hhvm-autoload": "^2.0|^3.0",
+    "hhvm/hsl": "^4.0",
+    "hhvm/type-assert": "^3.2|^4.0",
+    "hhvm/hhast": "^4.21.4"
+  },
+  "require-dev": {
+    "facebook/fbexpect": "^2.6.1",
+    "hhvm/hacktest": "^2.0"
+  }
+}

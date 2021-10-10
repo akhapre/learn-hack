@@ -1,7 +1,10 @@
 {
     "require": {
         "hhvm/hhvm-autoload": "^3.3",
-        "hhvm/hsl": "^4.108"
+        "hhvm/hsl": "^4.108",
+        "facebook/hack-router": "^0.19.8",
+        "facebook/hack-router-codegen": "^0.17.5",
+        "usox/hackttp": "^0.5.4"
     },
     "require-dev": {
         "hhvm/hhast": "^4.123",

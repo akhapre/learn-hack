@@ -1,6 +1,58 @@
 {
     "packages": [
         {
+            "name": "facebook/definition-finder",
+            "version": "v2.14.2",
+            "version_normalized": "2.14.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hhvm/definition-finder.git",
+                "reference": "5f7708abaa7973387ddcc71ff00449852465bee4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hhvm/definition-finder/zipball/5f7708abaa7973387ddcc71ff00449852465bee4",
+                "reference": "5f7708abaa7973387ddcc71ff00449852465bee4",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.78",
+                "hhvm/hhast": "^4.21.4",
+                "hhvm/hhvm-autoload": "^2.0|^3.0",
+                "hhvm/hsl": "^4.0",
+                "hhvm/type-assert": "^3.2|^4.0"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.6.1",
+                "hhvm/hacktest": "^2.0"
+            },
+            "time": "2021-05-03T19:37:09+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Find definitions in PHP or Hack files. Useful for autoloaders.",
+            "homepage": "https://github.com/hhvm/definitions-finder",
+            "keywords": [
+                "autoload",
+                "definitions",
+                "hack",
+                "hhvm"
+            ],
+            "support": {
+                "issues": "https://github.com/hhvm/definition-finder/issues",
+                "source": "https://github.com/hhvm/definition-finder/tree/v2.14.2"
+            },
+            "install-path": "../facebook/definition-finder"
+        },
+        {
             "name": "facebook/difflib",
             "version": "v1.2.0",
             "version_normalized": "1.2.0.0",
@@ -81,6 +133,219 @@
                 "source": "https://github.com/hhvm/fbexpect/tree/v2.8.0"
             },
             "install-path": "../facebook/fbexpect"
+        },
+        {
+            "name": "facebook/hack-codegen",
+            "version": "v4.4.1",
+            "version_normalized": "4.4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hhvm/hack-codegen.git",
+                "reference": "92aa374affd27276be41a19254dacbdb66b65d1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hhvm/hack-codegen/zipball/92aa374affd27276be41a19254dacbdb66b65d1c",
+                "reference": "92aa374affd27276be41a19254dacbdb66b65d1c",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm": "^4.80",
+                "hhvm/hhvm-autoload": "^2.0|^3.0",
+                "hhvm/hsl": "^4.0"
+            },
+            "require-dev": {
+                "facebook/difflib": "^1.0",
+                "facebook/fbexpect": "^2.6.1",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.80",
+                "hhvm/hsl-experimental": "^4.53",
+                "hhvm/type-assert": "^3.1|^4.0"
+            },
+            "time": "2021-06-01T19:29:04+00:00",
+            "bin": [
+                "bin/hh-codegen-verify-signatures",
+                "bin/hh-codegen-verify-signatures.hack"
+            ],
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Fred Emmott",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Drew Hoskins",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Gaurav Kumar",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alejandro Marcu",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Matthieu Martin",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hack Codegen is a library for programmatically generating Hack code",
+            "keywords": [
+                "code generation",
+                "hack"
+            ],
+            "support": {
+                "issues": "https://github.com/hhvm/hack-codegen/issues",
+                "source": "https://github.com/hhvm/hack-codegen/tree/v4.4.1"
+            },
+            "install-path": "../facebook/hack-codegen"
+        },
+        {
+            "name": "facebook/hack-http-request-response-interfaces",
+            "version": "v0.3",
+            "version_normalized": "0.3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hhvm/hack-http-request-response-interfaces.git",
+                "reference": "29f976830af6b2fdb716037ee1fd10bb2e57c6cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hhvm/hack-http-request-response-interfaces/zipball/29f976830af6b2fdb716037ee1fd10bb2e57c6cd",
+                "reference": "29f976830af6b2fdb716037ee1fd10bb2e57c6cd",
+                "shasum": ""
+            },
+            "require": {
+                "hhvm/hsl-experimental": "^4.50"
+            },
+            "require-dev": {
+                "hhvm/hhast": "^4.0"
+            },
+            "time": "2020-03-30T21:06:56+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/facebookexperimental/hack-http-request-response-interfaces",
+            "support": {
+                "issues": "https://github.com/hhvm/hack-http-request-response-interfaces/issues",
+                "source": "https://github.com/hhvm/hack-http-request-response-interfaces/tree/master"
+            },
+            "install-path": "../facebook/hack-http-request-response-interfaces"
+        },
+        {
+            "name": "facebook/hack-router",
+            "version": "v0.19.8",
+            "version_normalized": "0.19.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hhvm/hack-router.git",
+                "reference": "98705ea6149d9d333b91d2be0080a2bdfb4bcdb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hhvm/hack-router/zipball/98705ea6149d9d333b91d2be0080a2bdfb4bcdb1",
+                "reference": "98705ea6149d9d333b91d2be0080a2bdfb4bcdb1",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/hack-http-request-response-interfaces": "^0.2|^0.3",
+                "hhvm": "^4.25",
+                "hhvm/hsl": "^4.0"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.0",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.0",
+                "hhvm/hhvm-autoload": "^2.0.8|^3.0",
+                "usox/hackttp": "dev-master"
+            },
+            "time": "2020-12-18T22:55:23+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "URI routing for Hack",
+            "homepage": "https://github.com/hhvm/hack-router",
+            "keywords": [
+                "hack",
+                "hhvm",
+                "router",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/hhvm/hack-router/issues",
+                "source": "https://github.com/hhvm/hack-router/tree/v0.19.8"
+            },
+            "install-path": "../facebook/hack-router"
+        },
+        {
+            "name": "facebook/hack-router-codegen",
+            "version": "v0.17.5",
+            "version_normalized": "0.17.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hhvm/hack-router-codegen.git",
+                "reference": "bc55cc82e25f76dff1622cc84e3c192d47d4439f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hhvm/hack-router-codegen/zipball/bc55cc82e25f76dff1622cc84e3c192d47d4439f",
+                "reference": "bc55cc82e25f76dff1622cc84e3c192d47d4439f",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/definition-finder": "^2.7",
+                "facebook/hack-codegen": "^4.1.0",
+                "facebook/hack-http-request-response-interfaces": "^0.2|^0.3",
+                "facebook/hack-router": "^0.19",
+                "hhvm": "^4.25",
+                "hhvm/type-assert": "^3.0|^4.0"
+            },
+            "require-dev": {
+                "facebook/fbexpect": "^2.6.1",
+                "hhvm/hacktest": "^2.0",
+                "hhvm/hhast": "^4.6",
+                "hhvm/hhvm-autoload": "^2.0|^3.0",
+                "usox/hackttp": "^0.3|^0.4|^0.5"
+            },
+            "time": "2020-06-05T19:31:54+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "URI routing for Hack with codegen",
+            "homepage": "https://github.com/hhvm/hack-router-codegen",
+            "keywords": [
+                "hack",
+                "hhvm",
+                "router",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/hhvm/hack-router-codegen/issues",
+                "source": "https://github.com/hhvm/hack-router-codegen/tree/v0.17.5"
+            },
+            "install-path": "../facebook/hack-router-codegen"
         },
         {
             "name": "facebook/hh-clilib",
@@ -180,17 +445,17 @@
         },
         {
             "name": "hhvm/hhast",
-            "version": "v4.123.1",
-            "version_normalized": "4.123.1.0",
+            "version": "v4.127.1",
+            "version_normalized": "4.127.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/hhast.git",
-                "reference": "81fe7ccb2b8ac62c1f5d33a853dad0565ce59162"
+                "reference": "f6480404bd1c02d4001a7d12580955a58134eb1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/hhast/zipball/81fe7ccb2b8ac62c1f5d33a853dad0565ce59162",
-                "reference": "81fe7ccb2b8ac62c1f5d33a853dad0565ce59162",
+                "url": "https://api.github.com/repos/hhvm/hhast/zipball/f6480404bd1c02d4001a7d12580955a58134eb1a",
+                "reference": "f6480404bd1c02d4001a7d12580955a58134eb1a",
                 "shasum": ""
             },
             "require": {
@@ -201,14 +466,14 @@
                 "hhvm/hsl": "^4.25",
                 "hhvm/hsl-experimental": "^4.58.0rc1",
                 "hhvm/hsl-io": "^0.2.0|0.3.0",
-                "hhvm/type-assert": "^3.0|^4.0"
+                "hhvm/type-assert": "^4.2.2"
             },
             "require-dev": {
                 "facebook/fbexpect": "^2.1.1",
                 "facebook/hack-codegen": "^4.0",
                 "hhvm/hacktest": "^2.2.0"
             },
-            "time": "2021-08-31T17:50:35+00:00",
+            "time": "2021-09-16T17:58:37+00:00",
             "bin": [
                 "bin/hhast-lint",
                 "bin/hhast-lint.hack",
@@ -229,7 +494,7 @@
             "description": "A mutable AST library for Hack with linting and code migrations",
             "support": {
                 "issues": "https://github.com/hhvm/hhast/issues",
-                "source": "https://github.com/hhvm/hhast/tree/v4.123.1"
+                "source": "https://github.com/hhvm/hhast/tree/v4.127.1"
             },
             "install-path": "../hhvm/hhast"
         },
@@ -383,17 +648,17 @@
         },
         {
             "name": "hhvm/type-assert",
-            "version": "v4.2.1",
-            "version_normalized": "4.2.1.0",
+            "version": "v4.2.2",
+            "version_normalized": "4.2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hhvm/type-assert.git",
-                "reference": "8c907805af5313b2aa8e93242811e22d2de5dffe"
+                "reference": "7106e783dc43724efa5d4147456025a2316480f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/8c907805af5313b2aa8e93242811e22d2de5dffe",
-                "reference": "8c907805af5313b2aa8e93242811e22d2de5dffe",
+                "url": "https://api.github.com/repos/hhvm/type-assert/zipball/7106e783dc43724efa5d4147456025a2316480f0",
+                "reference": "7106e783dc43724efa5d4147456025a2316480f0",
                 "shasum": ""
             },
             "require": {
@@ -406,7 +671,7 @@
                 "hhvm/hhast": "^4.0",
                 "hhvm/hhvm-autoload": "^2.0|^3.0"
             },
-            "time": "2021-07-07T18:09:45+00:00",
+            "time": "2021-09-13T15:44:05+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -425,19 +690,131 @@
             ],
             "support": {
                 "issues": "https://github.com/hhvm/type-assert/issues",
-                "source": "https://github.com/hhvm/type-assert/tree/v4.2.1"
+                "source": "https://github.com/hhvm/type-assert/tree/v4.2.2"
             },
             "install-path": "../hhvm/type-assert"
+        },
+        {
+            "name": "usox/hack-http-factory-interfaces",
+            "version": "v0.2.2",
+            "version_normalized": "0.2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usox/hack-http-factory-interfaces.git",
+                "reference": "412fdeb8d85c83bef558223bf5ed25e5e7e37692"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usox/hack-http-factory-interfaces/zipball/412fdeb8d85c83bef558223bf5ed25e5e7e37692",
+                "reference": "412fdeb8d85c83bef558223bf5ed25e5e7e37692",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/hack-http-request-response-interfaces": "^0.2|^0.3",
+                "hhvm": "^4.0"
+            },
+            "time": "2020-04-08T16:17:10+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Usox\\HackHttpFactory\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Jakob",
+                    "email": "dev@usox.org"
+                }
+            ],
+            "description": "PSR-17 like http factory interfaces",
+            "homepage": "https://github.com/usox/hack-http-factory-interfaces",
+            "keywords": [
+                "factory",
+                "hack",
+                "hhvm",
+                "http"
+            ],
+            "support": {
+                "issues": "https://github.com/usox/hack-http-factory-interfaces/issues",
+                "source": "https://github.com/usox/hack-http-factory-interfaces/tree/master"
+            },
+            "install-path": "../usox/hack-http-factory-interfaces"
+        },
+        {
+            "name": "usox/hackttp",
+            "version": "v0.5.4",
+            "version_normalized": "0.5.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/usox/hackttp.git",
+                "reference": "a5ba0a2c4dc31f06b4907026b3bc0bd208a07a24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/usox/hackttp/zipball/a5ba0a2c4dc31f06b4907026b3bc0bd208a07a24",
+                "reference": "a5ba0a2c4dc31f06b4907026b3bc0bd208a07a24",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/hack-http-request-response-interfaces": "^0.3",
+                "hhvm": "^4.93",
+                "hhvm/hsl": "^4.25",
+                "hhvm/hsl-experimental": "^4.58",
+                "hhvm/hsl-io": "^0.3.0",
+                "hhvm/type-assert": "^3.3|^4.0",
+                "usox/hack-http-factory-interfaces": "^0.2"
+            },
+            "require-dev": {
+                "hhvm/hacktest": "^1.4|^2.0",
+                "hhvm/hhast": "^4.1",
+                "usox/hackmock": "^1.3"
+            },
+            "time": "2021-04-12T06:06:05+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Usox\\HackTTP\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Jakob",
+                    "email": "dev@usox.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Work in progress demo implementation of facebookexperimental/hack-http-request-response-interfaces",
+            "homepage": "https://github.com/usox/hackttp",
+            "keywords": [
+                "hack",
+                "hacklang",
+                "hhvm",
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream"
+            ],
+            "support": {
+                "issues": "https://github.com/usox/hackttp/issues",
+                "source": "https://github.com/usox/hackttp/tree/v0.5.4"
+            },
+            "install-path": "../usox/hackttp"
         }
     ],
     "dev": true,
     "dev-package-names": [
-        "facebook/difflib",
         "facebook/fbexpect",
-        "facebook/hh-clilib",
-        "hhvm/hacktest",
-        "hhvm/hhast",
-        "hhvm/hsl-experimental",
-        "hhvm/type-assert"
+        "hhvm/hacktest"
     ]
 }

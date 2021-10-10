@@ -1,0 +1,7 @@
+/vendor/
+/docs/.bundle
+/docs/vendor/
+composer.lock
+*.swp
+.*.hhast.*cache
+.var/

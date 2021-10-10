@@ -1,0 +1,20 @@
+{
+  "roots": [ "src/", "tests/" ],
+  "builtinLinters": "all",
+  "disabledLinters": [
+    "Facebook\\HHAST\\Linters\\CamelCasedMethodsUnderscoredFunctionsLinter",
+    "Facebook\\HHAST\\Linters\\UseStatementWithAsLinter"
+  ],
+  "overrides": [
+    {
+      "patterns": [ "tests/examples/codegen/*" ],
+      "disableAllAutoFixes": true
+    },
+    {
+      "patterns": [ "tests/examples/codegen/lookup-path.php" ],
+      "disabledLinters": [
+        "Facebook\\HHAST\\Linters\\StrictModeOnlyLinter"
+      ]
+    }
+  ]
+}

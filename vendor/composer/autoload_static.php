@@ -6,6 +6,25 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit43738629161297883bb443266e2eda87
 {
+    public static $prefixLengthsPsr4 = array (
+        'U' => 
+        array (
+            'Usox\\HackTTP\\' => 13,
+            'Usox\\HackHttpFactory\\' => 21,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Usox\\HackTTP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/usox/hackttp/src',
+        ),
+        'Usox\\HackHttpFactory\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/usox/hack-http-factory-interfaces/src',
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Facebook\\AutoloadMap\\ComposerPlugin' => __DIR__ . '/..' . '/hhvm/hhvm-autoload/ComposerPlugin.php',
@@ -14,6 +33,8 @@ class ComposerStaticInit43738629161297883bb443266e2eda87
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit43738629161297883bb443266e2eda87::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit43738629161297883bb443266e2eda87::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit43738629161297883bb443266e2eda87::$classMap;
 
         }, null, ClassLoader::class);

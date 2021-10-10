@@ -1,0 +1,29 @@
+{
+  "name": "usox/hack-http-factory-interfaces",
+  "description": "PSR-17 like http factory interfaces",
+  "keywords": [
+    "hack",
+    "hhvm",
+    "http",
+    "factory"
+  ],
+  "homepage": "https://github.com/usox/hack-http-factory-interfaces",
+  "license": [
+    "MIT"
+  ],
+  "authors": [
+    {
+      "name": "Daniel Jakob",
+      "email": "dev@usox.org"
+    }
+  ],
+  "require": {
+    "hhvm": "^4.0",
+    "facebook/hack-http-request-response-interfaces": "^0.2|^0.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Usox\\HackHttpFactory\\": "src/"
+    }
+  }
+}
