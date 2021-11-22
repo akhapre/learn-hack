@@ -6,7 +6,7 @@
  * /home/akhapre/Projects/learn-hack/bin/build_router.hack
  *
  *
- * @generated SignedSource<<a15934dd22be2226289bc4726ce3f644>>
+ * @generated SignedSource<<25887f78b76d5855f9ec70d112fe08ec>>
  */
 
 final class Router
@@ -17,7 +17,8 @@ final class Router
   ): ImmMap<\Facebook\HackRouter\HttpMethod, ImmMap<string, classname<\learnhack\controllers\AbstractWebController>>> {
     $map = ImmMap {
       \Facebook\HackRouter\HttpMethod::GET => ImmMap {
-        '/login' => \LoginPageController::class,
+        '/greetings/{name}' => \learnhack\controllers\GreetingsController::class,
+        '/login' => \learnhack\controllers\LoginPageController::class,
       },
     };
     return $map;

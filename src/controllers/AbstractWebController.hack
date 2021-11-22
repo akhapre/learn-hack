@@ -1,14 +1,12 @@
 namespace learnhack\controllers;
-use type Facebook\HackRouter\IncludeInUriMap; 
-use type Facebook\HackRouter\{RequestParameter, RequestParameters};
+use type Facebook\HackRouter\{IncludeInUriMap, RequestParameters, UriPattern};
 use type Facebook\Experimental\Http\Message\{
-    ResponseInterface,
     ServerRequestInterface,
 };
-use type Facebook\HackRouter\UriPattern;
 
 <<__ConsistentConstruct>>
 abstract class AbstractWebController implements IncludeInUriMap{
+    abstract const type IdSet = shape("A"=>string);
     private RequestParameters $parameters;
     public function __construct(
         ImmMap<string, string> $parameters,
@@ -24,8 +22,9 @@ abstract class AbstractWebController implements IncludeInUriMap{
         return (new UriPattern())->literal('/hello');
     }
 
-    public function getResponse(): string {
-        return 'Hello, world';
+    public function getParameters() : RequestParameters {
+        return $this->parameters;
     }
+    public abstract function getResponse(): this::IdSet;
 
 }
