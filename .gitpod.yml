@@ -1,1 +1,1 @@
-image: akhapre/hhvm-ubuntu
+image: akhapre:hhvm-ubuntu
