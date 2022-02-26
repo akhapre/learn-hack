@@ -1,1 +1,1 @@
-image: hhvm-ubuntu
+image: hhvm/hhvm-proxygen
