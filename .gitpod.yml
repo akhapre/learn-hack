@@ -1,1 +1,3 @@
 image: hhvm/hhvm-proxygen
+ports:
+  - port: 80
