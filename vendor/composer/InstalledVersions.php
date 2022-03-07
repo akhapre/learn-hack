@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'dd5cb4f153fa758126f435a8d35ffc9a2aeca769',
+    'reference' => '228e3f769618fecec8cfa79d04fa9892d99afb96',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'dd5cb4f153fa758126f435a8d35ffc9a2aeca769',
+      'reference' => '228e3f769618fecec8cfa79d04fa9892d99afb96',
     ),
     'facebook/definition-finder' => 
     array (

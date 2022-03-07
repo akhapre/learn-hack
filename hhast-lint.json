@@ -1,4 +1,7 @@
 {
     "roots": [ "bin/", "src/", "tests/" ],
-    "builtinLinters": "all"
+    "builtinLinters": "all",
+    "extraLinters": [
+        "Facebook\\HHAST\\HHClientLinter"
+      ]
 }

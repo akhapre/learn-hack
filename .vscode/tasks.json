@@ -6,7 +6,7 @@
         {
             "label": "Start HHVM Server (Debug 8999)",
             "type": "shell",
-            "command": "hhvm -m server -p8080 -d hhvm.debugger.vs_debug_enable=1 -d hhvm.debugger.vs_debug_listen_port=8999 -d hhvm.debugger.enable_debugger_server=true -d hhvm.server.source_root=/home/akhapre/Projects/learn-hack/src -d hhvm.server.type=proxygen -d hhvm.server.default_document=index.hack -d hhvm.server.error_document404=index.hack",
+            "command": "hhvm -m server -p8080 -d hhvm.debugger.vs_debug_enable=1 -d hhvm.debugger.vs_debug_listen_port=8999 -d hhvm.debugger.enable_debugger_server=true -d hhvm.server.source_root=~/learn-hack/src -d hhvm.server.type=proxygen -d hhvm.server.default_document=index.hack -d hhvm.server.error_document404=index.hack -vServer.AllowRunAsRoot=1",
             "isBackground": true,
             "problemMatcher": []
         },
